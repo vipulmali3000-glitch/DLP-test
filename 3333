@@ -1,0 +1,4 @@
+        string key = git.Pid + "|" + ip;
+        bool isNew = !_gitBursts.ContainsKey(key);
+
+        var b = _gitBursts.GetOrAdd(
